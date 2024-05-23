@@ -1,0 +1,192 @@
+.signature-page-wrapper {
+    height: 100%;
+    width: 100%;
+  
+  }
+  
+  .signature-page-container {
+    height: 100%;
+    width: 100%;
+  
+    /*background: #626efd;*/
+  
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .top-side {
+    height: 50%;
+    width: 100%;
+    /*background: red;*/
+  
+    display: flex;
+    padding: 1em;
+  }
+  
+  .form-container {
+    width: 100%;
+    height: 100%;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5em;
+  }
+  
+  .input-container {
+    width: 95%;
+    height: 4em;
+  
+    display: flex;
+    gap: 1em;
+  }
+  
+  label {
+    position: relative;
+    left: 1em;
+    font-size: x-large;
+    /*font-weight: bold;*/
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+  .input-text-container {
+    position: relative;
+  
+  }
+  
+  .input-text-container, .primary-button {
+    background: white;
+    width: 100%;
+    height: 100%;
+    border-radius: 2em;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .input-text-container {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  
+  select {
+    background: none;
+  }
+
+  input[type], select {
+    /*height: 2em;*/
+    margin-right: 1em;
+    margin-left: 3em;
+    font-size: large;
+    /*font-weight: bold;*/
+    width: 100%;
+  }
+  
+  
+  .primary-button {
+    font-weight: bold;
+    color: white;
+    background: #626efd;
+    box-shadow: #8aacff 0px 5px 15px;
+  }
+  
+  .primary-button:active {
+    animation: cursor-hover 5s ease  ;
+  }
+  
+  button[disabled] {
+    background: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  
+    color: #02020e;
+  
+  }
+  
+  
+  .input-text-container {
+  
+  }
+  
+  .bottom-side {
+    height: 50%;
+    width: 100%;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    padding: 1em;
+    background: #02020e;
+  
+    background: rgb(2,2,14);
+    background: linear-gradient(0deg, rgba(2,2,14,1) 25%, rgba(136,0,233,1) 97%);
+  }
+  
+  .qr-code-wrapper {
+  
+    background: white;
+    width: 10em;
+    height: 10em;
+    border-radius: 1.5em;
+  
+  }
+  
+  .qr-code-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .qr-code-container img {
+    width: 9em;
+    height: 9em;
+    object-fit: contain;
+  }
+  .signature-number-container {
+  
+  }
+  
+  .signature-number-value {
+    color: white;
+    font-size: x-large;
+  }
+  
+  
+  
+  @media only screen and (min-width: 992px) {
+  
+    .top-side {
+      height: 50%;
+      width: 100%;
+      /*background: red;*/
+  
+      display: flex;
+      justify-content: center;
+      padding: 1em;
+    }
+  
+    .form-container {
+      width: 100%;
+      height: 100%;
+      max-width: 50em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 2.5em;
+    }
+  }
+  
+
+  #dut1-name {
+    color: white;
+    font-weight: bold;
+  }

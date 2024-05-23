@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signature</title>
+    <link rel="stylesheet" href="./connexion.css">
+    <link rel="stylesheet" href="../global.css">
+</head>
+<body>
+
+    <main>
+      <div class="home-page-wrapper" >
+        <div class="home-page-container" >
+      
+          <div class="top-SignatureReceivers-container" >
+            <div class="title-container" >
+              <h2> Fillieuls </h2>
+            </div>
+      
+            <div class="signatureReceivers-container" >
+      
+              <div class="signatureReceiver-container" *ngFor="let signatureReceiver of bestSignatureReceivers" >
+      
+                <div class="user-infos-container" *ngIf="bestSignatureReceivers.loaded" >
+                  <div class="signatureReceiver-user-name" >
+                    {{signatureReceiver.user.firstName}} {{signatureReceiver.user.lastName}}
+                  </div>
+                  <div class="signatureReceiver-user-picture" >
+                    <img src="{{signatureReceiver.user.picture}}">
+                  </div>
+                  <div class="signatureReceiver-user-signatureNumber" >
+                    {{signatureReceiver.signatureNumber}} signatures
+                  </div>
+                </div>
+      
+                <div class="user-infos-container" *ngIf="!bestSignatureReceivers.loaded" style="justify-content: center" >
+                  <app-loader></app-loader>
+                </div>
+      
+      
+              </div>
+      
+      
+            </div>
+      
+          </div>
+      
+          <div class="recents-signatory-container" >
+            <div class="title-container" >
+              <h2> Récents </h2>
+            </div>
+      
+            <div class="signatorys-container" *ngIf="signatorys" >
+      
+              <div class="signatory-container"  *ngFor="let signatory of signatorys.reverse()" >
+      
+                <div class="left-side" >
+      
+                  <div class="signatory-user-name" >
+                    {{signatory.pseudo}}
+                  </div>
+      
+                  <div class="signatory-user-real-name" >
+                    ( {{signatory.firstName}} {{signatory.lastName}} )
+                  </div>
+                </div>
+      
+      
+      <!--          <div class="signatory-user-picture" >-->
+      <!--            <img src="{{signatureReceiver.picture}}">-->
+      <!--          </div>-->
+      
+                <div class="signatureReceiver-user-signatureNumber" >
+                  {{signatory.userNiveau}}
+                </div>
+              </div>
+      
+      
+              <div class="signatory-container" style="opacity: 0" >
+                <div class="signatory-user-name" >
+                </div>
+                <div class="signatory-user-picture" >
+                </div>
+                <div class="signatureReceiver-user-signatureNumber" >
+                </div>
+              </div>
+      
+            </div>
+      
+          </div>
+      
+        </div>
+      </div>
+        
+    </main>
+      
+    
+</body>
+</html>

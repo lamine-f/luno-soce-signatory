@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signature</title>
+    <link rel="stylesheet" href="./signature.css">
+    <link rel="stylesheet" href="../global.css">
+    
+</head>
+<body>
+
+    <main>
+        <div class="signature-page-wrapper" >
+            <div class="signature-page-container" >
+                <div class="top-side" >
+                    <div class="form-container">
+                    <div class="input-container" >
+                        <div class="input-text-container" >
+                        <label for="number"> <fa-icon faIcon="faUser" > </fa-icon>  </label>
+                        <select required class="select" name="" id="niveau">
+                            <option value="none">Niveau</option>
+                            <option value="dut2" >Parrain/Maraine</option>
+                            <option value="dic1" >Mame 1er </option>
+                            <option value="dic2" >Mame 2eme</option>
+                            <option value="dic3" >Mame 3eme</option>
+                        </select>
+                        <!-- <input type="text" id="number" placeholder="Numéro de téléphone" name="phoneNumberInputValue" > -->
+                        </div>
+                    </div>
+            
+                    <div class="input-container" >
+                        <div class="input-text-container" >
+                        <label for="number"> <fa-icon faIcon="faUser" > </fa-icon>  </label>
+                        <input  value="" required type="text" id="pseudo" placeholder="Nom/Pseudo" name="phoneNumberInputValue" >
+                        </div>
+                    </div>
+
+                    <div class="input-container" >
+                        <div class="input-text-container" >
+                        <label for="password"> <fa-icon faIcon="faLock" > </fa-icon> </label>
+            
+                        <input value="" required type="number" id="phonenumber" name="phonenumber" placeholder="Numéro de téléphone">
+                        </div>
+                    </div>
+            
+                    <div class="input-container">
+                        <button disabled="true" id="submit"  class="primary-button" > Signer </button>
+                    </div>
+                    </div>
+                </div>
+            
+                <div class="bottom-side" >
+
+                    <div> Yo codeur <span id="dut1-name" ></span> </div>
+
+                    <div class="qr-code-wrapper" >
+                        <div class="qr-code-container" >
+                            <img id="image-el" src="static/yo.jpg">
+                        </div>
+                    </div>
+            
+                    <div class="signature-number-container">
+                        <div id="count" class="signature-number-value">
+                            
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </main>
+    
+    <nav>
+        <div class="nav-bar-wrapper" >
+            <div class="nav-bar-container" >
+              <div class="icons-container" >
+                <div class="icon-container" target="signature" >
+                  <!-- <div class="selected-icon-bar" *ngIf="faHouse == selectedIcon" ></div> -->
+                  <!-- <fa-icon [icon]="faHouse"  style="color: white" ></fa-icon> -->
+                  <i class="fa-solid fa-hashtag" target="signature">Sign.</i>
+                  <!-- <fa-icon [icon]="faHouse" >Sign</fa-icon> -->
+                </div>
+                <div class="icon-container" target="signs" >
+                  <!-- <div class="selected-icon-bar" *ngIf="faArrowUp91 == selectedIcon" ></div> -->
+                  <!-- <fa-icon [icon]="faArrowUp91"  style="color: white" ></fa-icon> -->
+                  <!-- <fa-icon [icon]="faArrowUp91"  > All </fa-icon> -->
+                  <i class="fa-solid fa-hashtag" target="signs">All</i>
+
+                </div>
+          
+              </div>
+            </div>
+          </div>
+          
+    </nav>
+      
+    
+</body>
+    <!-- <script type="module" src="../../js/tools.js" ></script> -->
+    <script type="module" src="signature.js" ></script>
+</html>
