@@ -13,7 +13,7 @@ navBarButtons.forEach(el => {
 })
 
 const render = (pseudo, phoneNumber, level) => {
-    return ` <div class="signatory-container"> <div class="left-side" ><div class="signatory-user-name" >${pseudo}</div><div class="signatory-user-real-name" > <a href="${phoneNumber}" target='_blank' > </a> ${phoneNumber}</div></div><div class="signatureReceiver-user-signatureNumber" >${level}</div></div> </div>`
+    return ` <div class="signatory-container" onclick= " window.location.href='https://wa.me/+221${phoneNumber}'"  > <div class="left-side" ><div class="signatory-user-name" >${pseudo}</div><div class="signatory-user-real-name" > <a href="${phoneNumber}" target='_blank' > </a> ${phoneNumber}</div></div><div class="signatureReceiver-user-signatureNumber" >${level}</div></div> </div>`
 }
 
 

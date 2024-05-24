@@ -11,30 +11,40 @@ const db = {
     },
 
     sign: [
-        {
-            niveau: "mame",
-            userDetails: {
-                pseudo: "",
-                phoneNumber: "",
-            },
-        }
+        // {
+        //     niveau: "mame",
+        //     userDetails: {
+        //         pseudo: "",
+        //         phoneNumber: "",
+        //     },
+        // }
     ]
 };
 
 
 export const setUser = ({firstName, lastName}) => {
 
-    const savedData = JSON.parse(window.localStorage.getItem(token));
-    const savingData = {
-        ...savedData,
-        userDetails: {
-            firstName,
-            lastName,
-        }
-    };
-    
+    if ( window.localStorage.getItem(token) ) {
 
-    window.localStorage.setItem( token, JSON.stringify(savingData) );
+    }else {
+        const savingData = {
+            sign: [],
+            userDetails: {
+                firstName,
+                lastName,
+            }
+        };
+        
+        window.localStorage.setItem( token, JSON.stringify(savingData) );
+    }
+
+    // const savedData = JSON.parse(window.localStorage.getItem(token));
+    // console.log(savedData);
+    // if (!savedData) {
+    //     window.localStorage.setItem(token, JSON.stringify (db) );
+
+    // } 
+    
 }
 
 export const addSignUser = (user) => {

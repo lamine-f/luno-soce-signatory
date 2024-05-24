@@ -8,6 +8,7 @@ _(["#submit-btn"])[0]
   const firstName = firstNameInput.value;
   const lastName = lastNameInput.value;
 
+
   setUser( { firstName, lastName } )
 
   navigate("signature/index.html")

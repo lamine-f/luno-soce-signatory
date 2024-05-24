@@ -7,20 +7,23 @@
   .signature-page-container {
     height: 100%;
     width: 100%;
+    /* padding: 10px; */
   
     /*background: #626efd;*/
-  
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
+    gap: 2em;
   }
   
   .top-side {
-    height: 50%;
+    height: 70%;
     width: 100%;
     /*background: red;*/
   
     display: flex;
-    padding: 1em;
+    /* padding: 1em; */
+    /* position: relative; */
+    /* top: -150px; */
   }
   
   .form-container {
@@ -29,7 +32,7 @@
   
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     gap: 2.5em;
   }
@@ -71,7 +74,7 @@
   }
   
   .input-text-container {
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: rgba(100, 100, 111, 0.042) 0px 7px 29px 0px;
   }
   
   select {
@@ -102,7 +105,6 @@
   button[disabled] {
     background: white;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  
     color: #02020e;
   
   }
@@ -113,7 +115,7 @@
   }
   
   .bottom-side {
-    height: 50%;
+    height: 30%;
     width: 100%;
   
     display: flex;
@@ -125,7 +127,10 @@
     background: #02020e;
   
     background: rgb(2,2,14);
-    background: linear-gradient(0deg, rgba(2,2,14,1) 25%, rgba(136,0,233,1) 97%);
+    background:  rgba(136,0,233,1) ;
+    background: linear-gradient(180deg, rgba(2,2,14,1) 25%, rgba(136,0,233,1) 97%);
+
+    /* border-radius: 25px; */
   }
   
   .qr-code-wrapper {
@@ -186,7 +191,12 @@
   }
   
 
+  .dut1-name-container {
+    color: rgba(136,0,233,1);
+
+  }
+
   #dut1-name {
-    color: white;
+    color: rgba(136,0,233,1);
     font-weight: bold;
   }
